@@ -10,13 +10,13 @@ header {
 	justify-content: flex-end;
 	widows: 100%;
 	height: 40px;
-	border-bottom: 2px solid #dad5d5;       
+	border-bottom: 2px solid #dad5d5;
 		ul {
 		 display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
 		height: 100%;
-		padding-right: 15%;
+		padding-right: 21.23%;
 		
 		}
 		li{
@@ -36,7 +36,7 @@ header {
 			overflow: visible; 
 			color: $color1;
 			opacity: 1;
-			transform: scale(2.0);
+			transform: scale(1.5);
 		}
 }
  // нижняя часть header/ в последствии добавить меню бургер        
@@ -45,15 +45,15 @@ header {
 	flex-direction: row;
 	justify-content: space-between; 
 	.logo {
-			padding-left: 16.85%;
+			padding-left: 22.18%;
 			height: 80px;
 			display: flex;
-			align-items: center;
-				}
+			align-items: center;}
 		ul{	
 		display: flex;
 		flex-direction: row;
-		width: 50%;
+		width: 41%;
+		padding-right: 7.97%;
 		height: 80px;
 			li{	
 				width: 100%;
@@ -61,27 +61,53 @@ header {
 				justify-content: center;
 				align-items: center;
 				flex-wrap: nowrap;
-				position: relative;
-				}
+				position: relative;}
 				a{
 					@include font ($brand-font-2,18px,bold, black);
 					font-size: 18px;
 					text-transform: uppercase;
 					flex-wrap: nowrap;
+					transition-duration: 0.3s;
 					}
 					a:hover{
 						color: $color1;
 					}
 					.search {
 						display: flex;
+					position: absolute;
+					width: 0;
+					left: 0;
 					}
 					i{
-						display: flex;
-						justify-content: flex-start;
-						width: 25px;
-					}
+						position: absolute;
+						font-size: 20px;
+						z-index: 2;
+						margin: -10px 0 0px 0;
+						&:hover{
+						color: $color1;}
+						}
 					.search-1 {
-
+						width: 10px;
+						position: absolute;
+						margin: -15px 0 0px 0;
+						height: 24px;
+						left: 24px;
+						border: 2px solid $color1;
+						opacity: 0;
+						border-radius: 5px;
+						&:hover,{opacity: 1;
+							width: 100px;
+							transition: opacity 0.5s ease-out, width 0.5s ease-out;}
+						&:focus{
+								opacity: 1;
+								width: 100px;
+							}
 					}
+					input::placeholder{
+						color: $font-color1;
+						padding: 0 0 0 20px;
+						@include font ($brand-font-1, 15px,bold, $font-color1);
+						text-transform: uppercase;
+						opacity: 0.5;}
 				} 
 			}   
