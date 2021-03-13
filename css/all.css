@@ -458,7 +458,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100%;
-  padding-right: 15%;
+  padding-right: 21.23%;
 }
 .iconstop li {
   display: -webkit-box;
@@ -484,9 +484,9 @@ header {
   overflow: visible;
   color: #f4754e;
   opacity: 1;
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .navigation {
@@ -502,7 +502,7 @@ header {
           justify-content: space-between;
 }
 .navigation .logo {
-  padding-left: 16.85%;
+  padding-left: 22.18%;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,7 +519,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 50%;
+  width: 41%;
+  padding-right: 7.97%;
   height: 80px;
 }
 .navigation ul li {
@@ -546,6 +547,9 @@ header {
   text-transform: uppercase;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 .navigation ul a:hover {
   color: #f4754e;
@@ -554,16 +558,91 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  width: 0;
+  left: 0;
 }
 .navigation ul i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 25px;
+  position: absolute;
+  font-size: 20px;
+  z-index: 2;
+  margin: -10px 0 0px 0;
 }
+.navigation ul i:hover {
+  color: #f4754e;
+}
+.navigation ul .search-1 {
+  width: 10px;
+  position: absolute;
+  margin: -15px 0 0px 0;
+  height: 24px;
+  left: 24px;
+  border: 2px solid #f4754e;
+  opacity: 0;
+  border-radius: 5px;
+}
+.navigation ul .search-1:hover {
+  opacity: 1;
+  width: 100px;
+  -webkit-transition: opacity 0.5s ease-out, width 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out, width 0.5s ease-out;
+  transition: opacity 0.5s ease-out, width 0.5s ease-out;
+}
+.navigation ul .search-1:focus {
+  opacity: 1;
+  width: 100px;
+}
+.navigation ul input::-webkit-input-placeholder {
+  color: #333333;
+  padding: 0 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.navigation ul input::-moz-placeholder {
+  color: #333333;
+  padding: 0 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.navigation ul input:-ms-input-placeholder {
+  color: #333333;
+  padding: 0 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.navigation ul input::-ms-input-placeholder {
+  color: #333333;
+  padding: 0 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.navigation ul input::placeholder {
+  color: #333333;
+  padding: 0 0 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
 .slikslider {
   position: relative;
   min-width: 0;
