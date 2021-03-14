@@ -819,6 +819,79 @@ h1 {
   left: 13px;
 }
 
+.about h2 {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16;
+  font-weight: 700;
+  color: #f4754e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.about p {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  color: #333333;
+}
+
+.layout {
+  width: 1100px;
+  max-width: 1100px;
+}
+
+.onicebar {
+  position: relative;
+  margin-bottom: 46px;
+}
+.onicebar h1 {
+  font-family: "OpenSans", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: normal;
+}
+.onicebar:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100px;
+  background-color: #f4754e;
+  left: 50%;
+  left: calc(50% - 50px);
+}
+
+.left {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.circle {
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-color: #f4754e;
+  border-radius: 50%;
+}
+.circle i {
+  font-size: 40px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 20px;
+}
+
+.right {
+  float: right;
+  display: block;
+  width: 50%;
+}
+
 footer {
   display: block;
   width: 100%;
