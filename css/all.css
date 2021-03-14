@@ -646,7 +646,6 @@ header {
 .slikslider {
   position: relative;
   min-width: 0;
-  z-index: 1;
 }
 
 .slick-track {
@@ -656,6 +655,11 @@ header {
   -webkit-box-align: flex-star;
       -ms-flex-align: flex-star;
           align-items: flex-star;
+  position: relative;
+}
+
+.slick-slide.slick-active {
+  position: relative;
 }
 
 .slikslider .slick-arrow {
@@ -663,18 +667,37 @@ header {
   top: 50%;
   z-index: 10;
   font-size: 0;
-  width: 50px;
-  height: 75px;
+  width: 40px;
+  height: 65px;
   border: none;
   margin: -37.5px 0 0 0;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .slikslider .slick-arrow.slick-prev {
   left: 60px;
   background: url("../images/arrow-prev1.png") 0 0/100% no-repeat;
+  z-index: 10;
+  opacity: 0.3;
+}
+.slikslider .slick-arrow.slick-prev:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .slikslider .slick-arrow.slick-next {
   right: 60px;
   background: url("../images/arrow-next.png") 0 0/100% no-repeat;
+  z-index: 10;
+  opacity: 0.3;
+}
+.slikslider .slick-arrow.slick-next:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .slikslider .slick-dots {
@@ -689,7 +712,8 @@ header {
           justify-content: center;
   position: absolute;
   bottom: 50px;
-  left: 48%;
+  z-index: 10;
+  left: 48.2%;
 }
 .slikslider .slick-dots.slick-dots li {
   margin: 0 7px 0 0;
@@ -706,10 +730,13 @@ header {
 }
 
 .slick-list {
+  position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .slider_item {
+  position: relative;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -719,44 +746,77 @@ header {
 .slider_item.slick-active {
   z-index: 0;
 }
+.slider_item img {
+  width: 100%;
+  height: 650px;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 650px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
 
 .sliderbg {
-  display: block;
-  width: 1600px;
-  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+  width: 918px;
   position: absolute;
-  top: 0%;
+  left: 26.21%;
+  top: 180px;
+  z-index: 10;
 }
 
-.backgroundban {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #000000;
-  opacity: 1;
-  z-index: 12;
-}
-
-.baner {
-  display: block;
-  width: 57.8%;
-  margin: 180px 0 0 21.43%;
-}
-.baner h2 {
+h2 {
   font-family: "OpenSans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  color: #333333;
+  color: #9d9d9d;
   text-align: center;
-  letter-spacing: 7px;
-  word-spacing: 17px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
-.baner h1 {
+
+h1 {
   font-family: "OpenSans", sans-serif;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
+  padding: 0 70px 0 70px;
+  text-transform: uppercase;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+.ditals {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  bottom: -100%;
+  background-color: #f4754e;
+  border-radius: 3px;
+}
+.ditals a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
 }
 
 footer {

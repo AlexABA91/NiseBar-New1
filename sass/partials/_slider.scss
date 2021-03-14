@@ -29,30 +29,47 @@
 .slikslider{
 	position: relative;
 	min-width: 0;
-	z-index: 1;
-	}	
-
+	
+	}
 .slick-track{
 	display: flex;
 	align-items: flex-star;
-	// width: 1600px;
+	position: relative;
+	
+}
+.slick-slide.slick-active{
+	position: relative;	
 }
 .slikslider .slick-arrow{
 		position: absolute;
 		top:50%;
 		z-index: 10;
 		font-size: 0;
-		width:50px;
-		height: 75px;
+		width:40px;
+		height: 65px;
 		border: none;
 		margin: -37.5px 0 0 0;
+		transition-duration: 0.5s;
 		&.slick-prev{
 			left: 60px;  
 			background: url('../images/arrow-prev1.png') 0 0 / 100% no-repeat;
+			z-index: 10;
+			opacity: 0.3;
+			&:hover{
+					opacity: 1;
+					transform: scale(1.2);
+				}
+			
 		}
 			&.slick-next{
 				right: 60px;
 				background: url('../images/arrow-next.png') 0 0 / 100% no-repeat;
+				z-index: 10;
+				opacity: 0.3;
+				&:hover{
+					opacity: 1;
+					transform: scale(1.2);
+				}
 		}		
 }
 .slikslider .slick-dots{
@@ -61,68 +78,86 @@
 			justify-content: center;
 			position: absolute;
 			bottom: 50px;
-			left: 48%;			
-		
-
+			z-index: 10;
+			left: 48.2%;
 			
-		
 		&.slick-dots li{
-				margin: 0 7px 0 0;
-
-		}
+				margin: 0 7px 0 0;}				
 		&.slick-dots button{
 			font-size: 0;
 			widows: 12px;
 			height: 12px;
 			background-color: #704e43;		
-			border: none;
-		}
+			border: none;}			
 		& li.slick-active button{
-			background-color: $color1;
-		}
+			background-color: $color1;}
 }	
 .slick-list{
+	position: relative;
 	overflow: hidden;
+	width: 100%;
 }
 	.slider_item{
+		position: relative;
 		transition: all 0.3s ease 0s;
 		text-align: center;
-		z-index: 1;
+		z-index: 1;		
 			&.slick-active{
-				z-index: 0;
-		}
+				z-index: 0}
+			& 	img{
+				width: 100%;
+				height: 650px;
+				}	
 	}
-.sliderbg {
-	display: block;
-	width: 1600px;
-	height: 650px;
+	.bg{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 650px;
+		background-color: black;
+		opacity: 0.6;
+		z-index: 1;
+	}
+.sliderbg{
+	display: flex;
+	justify-content: center;
+	height: 150px;
+	width: 918px;
 	position: absolute;
-	top:0%;
+	left: 26.21%;
+	top: 180px;
+z-index: 10;
 }
-	
-.backgroundban{
-	width: 100%;
-	height: 100%;
-	display: block;
-	background-color: #000000;
-	opacity: 1;
-	z-index: 12;
-}
-.baner{
-	display: block;
-width: 57.8%;
-margin: 180px 0 0 21.43%;
 h2{	
-	@include font($brand-font-2,18px,400,$font-color1);
+	@include font($brand-font-2,16px,400,#9d9d9d);
 	text-align: center;
-	letter-spacing: 7px;
-	word-spacing: 17px; 
-
+	letter-spacing: 4px;
+	text-transform: uppercase;
 	}
 	h1{
-		@include font($brand-font-2,52px,bold,$font-color2);
-		text-align: center;		
+		@include font($brand-font-2,42px,bold,$font-color2);
+		text-align: center;
+		padding: 0 70px 0 70px;
+		text-transform: uppercase;
+		line-height: 47px;
+		letter-spacing: 2px;
+	}
+
+.ditals {
+	display: block;
+	position: absolute;
+	width:150px;
+	height: 50px;
+	bottom: -100%;
+	background-color: $color1;
+	border-radius: 3px;
+	a{
+		@include font($brand-font-1,20px,400,$font-color2);
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		position: absolute;
+		top: 13px;
+		left: 13px;
 	}
 }
-.ditals {}
 	
