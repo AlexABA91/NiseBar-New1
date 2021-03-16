@@ -1,17 +1,61 @@
 .about {
-	h2{
-	@include font($brand-font-2,16,700,$color1);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-p{
-	@include font($brand-font-2,16,400,$font-color1);
-}
-}
 .layout {
 width:1100px;
 max-width: 1100px;
 }
+
+
+
+	.onicebar {
+	position: relative;
+
+h1{ @include font($brand-font-2,26px,bold,$color2);
+letter-spacing: normal;}
+margin-bottom:46px;
+&:after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	background-color: $color1;
+	left: 50%;
+	left: calc(50% - 50px);	
+}
+}
+	.circle {
+display: block;
+height: 80px;
+width: 80px;
+background-color: $color1;
+border-radius: 50%;
+position: relative;
+margin-right: 14px;
+ i{
+ 	font-size: 40px;
+ 	color: $font-color2;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ top: 20px;	
+ }
+}
+	h2{
+	@include font($brand-font-2,16px,700,$color1);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	display: inline;
+	line-height: 30px;
+		}
+}
+p{
+	@include font($brand-font-2,16px,400,$font-color1);
+	text-align: left;	
+	position: relative;
+	line-height: 22px;
+}
+
+
 
 
 .onicebar {
@@ -31,29 +75,56 @@ margin-bottom:46px;
 }
 }
 
+
+
+
 .left {
 	display: block;
 	float: left;
-	width: 50%
+	position: relative;
+	width: 51%;	
+
+.blok{
+	display: block;
+	position: relative;
+	width: 90%;
+	height: 80px;	
+	margin-bottom: 60px;
+	 &:hover{
+	 	transform: scale(1.1);
+	 	 box-shadow: inset 0 0 50px 0 #f3baa9;
+	 	 border-radius: 50%;
+	 }
+	}
+  // Сделать анимацию при наведнии
+.bloksleft{
+	display: block;
+	position: absolute;	
+	width: 82%;
+	height: 60px;
+	left: 95px;
+	bottom: 27px;
+	}
 }
-.bloksleft {}
-.circle {
-display: block;
-height: 80px;
-width: 80px;
-background-color: $color1;
-border-radius: 50%;
- i{ 	
- 	font-size: 40px;
- 	color: $font-color2;
- display: flex;
- justify-content: center;
- position: relative;
- top: 20px;	
- }
-}
+
+
 .right {
 	float: right;
 	display: block;
-	width: 50%
+	width: 47%;
+	.blokr{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 80px;	
+	margin-bottom: 60px;
+}
+.blokright{
+	display: block;
+	position: absolute;	
+	width: 445px;
+	height: 60px;
+	left: 95px;
+	bottom: 27px;
+	}
 }
