@@ -1,0 +1,159 @@
+.about {
+.layout {
+width:1100px;
+max-width: 1100px;
+}
+
+
+
+	.onicebar {
+	position: relative;
+
+h1{ @include font($brand-font-2,26px,bold,$color2);
+letter-spacing: normal;}
+margin-bottom:46px;
+&:after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	background-color: $color1;
+	left: 50%;
+	left: calc(50% - 50px);	
+}
+}
+	.circle {
+display: block;
+height: 80px;
+width: 80px;
+background-color: $color1;
+border-radius: 50%;
+position: relative;
+margin-right: 14px;
+ i{
+ 	font-size: 40px;
+ 	color: $font-color2;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ top: 20px;	
+ }
+}
+	h2{
+	@include font($brand-font-2,16px,700,$color1);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	display: inline;
+	line-height: 30px;
+		}
+}
+p{
+	@include font($brand-font-2,16px,400,$font-color1);
+	text-align: left;	
+	position: relative;
+	line-height: 22px;
+}
+
+
+
+
+.onicebar {
+	position: relative;
+
+h1{ @include font($brand-font-2,26px,bold,$color2);
+letter-spacing: normal;}
+margin-bottom:46px;
+&:after{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100px;
+	background-color: $color1;
+	left: 50%;
+	left: calc(50% - 50px);	
+}
+}
+
+
+
+
+.left {
+	display: block;
+	float: left;
+	position: relative;
+	width: 51%;	
+
+.blok{
+	display: block;
+	position: relative;
+	width: 85%;
+	height: 80px;	
+	margin-bottom: 60px;
+	transition-duration: 0.5s;
+	border-radius: 50px 5px 5px 50px;
+	 &:hover{
+	 	transform: scale(1.2);
+		transition: transform 0.5s ease-out;
+		animation: move 0.5s linear infinite 0s alternate;
+		@keyframes  move{
+				 		0%{
+				 			background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 13%, rgb(242, 242, 242) 75%);}
+				 			15%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 26%, rgb(242, 242, 242) 75%);}
+				 			30%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 25%, rgb(242, 242, 242) 75%);}
+				 			45%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 37%, rgb(242, 242, 242) 75%);}
+				 			60%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 54%, rgb(242, 242, 242) 75%);}
+				 			80%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 68%, rgb(242, 242, 242) 75%);}
+				 			100%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 73%, rgb(242, 242, 242) 89%);}
+				}		
+		}
+	}
+.bloksleft{
+	display: block;
+	position: absolute;	
+	width: 80%;
+	height: 100%;
+	left: 95px;
+	bottom: 8px;
+					}
+}
+
+
+.right {
+	float: right;
+	display: block;
+	width: 47%;
+	.blokr{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 80px;	
+	margin-bottom: 60px;
+	transition-duration: 0.5s;
+	border-radius: 50px 5px 5px 50px;
+	&:hover{
+	 	transform: scale(1.2);
+		transition: transform 0.5s ease-out;
+		animation: move 0.5s linear infinite 0s alternate;
+		@keyframes  move{
+				 		0%{
+				 			background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 13%, rgb(242, 242, 242) 75%);}
+				 			15%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 26%, rgb(242, 242, 242) 75%);}
+				 			30%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 25%, rgb(242, 242, 242) 75%);}
+				 			45%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 37%, rgb(242, 242, 242) 75%);}
+				 			60%{background: linear-gradient(315deg, rgb(232, 154, 2) 3%, rgb(169, 132, 45) 54%, rgb(242, 242, 242) 75%);}
+				 			80%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 68%, rgb(242, 242, 242) 75%);}
+				 			100%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 73%, rgb(242, 242, 242) 89%);}
+				}	
+
+}
+}
+.blokright{
+	display: block;
+	position: absolute;	
+	width: 445px;
+	height: 60px;
+	left: 95px;
+	bottom: 27px;
+	}
+}
