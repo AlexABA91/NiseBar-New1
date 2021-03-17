@@ -916,25 +916,61 @@ p {
 .left .blok {
   display: block;
   position: relative;
-  width: 90%;
+  width: 85%;
   height: 80px;
   margin-bottom: 60px;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 .left .blok:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: inset 0 0 50px 0 #f3baa9;
-          box-shadow: inset 0 0 50px 0 #f3baa9;
-  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.75, -1, 0.21, -1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.75, -1, 0.21, -1);
+  -o-transition: transform 0.5s cubic-bezier(0.75, -1, 0.21, -1);
+  transition: transform 0.5s cubic-bezier(0.75, -1, 0.21, -1);
+  transition: transform 0.5s cubic-bezier(0.75, -1, 0.21, -1), -webkit-transform 0.5s cubic-bezier(0.75, -1, 0.21, -1);
 }
 .left .bloksleft {
   display: block;
   position: absolute;
-  width: 82%;
-  height: 60px;
+  width: 80%;
+  height: 100%;
   left: 95px;
-  bottom: 27px;
+  bottom: 10px;
+}
+.left .bloksleft:hover {
+  animation: move 0.5s linear infinite 0s alternate-reverse;
+}
+@-webkit-keyframes move {
+  0% {
+    -webkit-box-shadow: inset 50px 50px 200px 0 red;
+            box-shadow: inset 50px 50px 200px 0 red;
+  }
+  50% {
+    -webkit-box-shadow: inset 0 0 0px 50 red;
+            box-shadow: inset 0 0 0px 50 red;
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 0px 0 red;
+            box-shadow: inset 0 0 0px 0 red;
+  }
+}
+@keyframes move {
+  0% {
+    -webkit-box-shadow: inset 50px 50px 200px 0 red;
+            box-shadow: inset 50px 50px 200px 0 red;
+  }
+  50% {
+    -webkit-box-shadow: inset 0 0 0px 50 red;
+            box-shadow: inset 0 0 0px 50 red;
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 0px 0 red;
+            box-shadow: inset 0 0 0px 0 red;
+  }
 }
 
 .right {
