@@ -1,0 +1,70 @@
+.pic img{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	display: block;
+	margin-top: 100px;
+}
+.bgr {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+	z-index: 2;
+	bottom: 0;
+	opacity: 0.6;
+}
+.banerr h2{
+	@include font($brand-font-2,26px,400,#babcbc);
+	letter-spacing: normal;
+	display: block;
+	margin-top: 115px;}
+	
+
+
+.iconr {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	widows: 100%;
+	height: 40px;
+	margin-top: 57px;
+	
+		ul {
+		 display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content:space-between;
+		height: 100%;
+		width: 175px;		
+		
+		}
+		li{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+				i{
+			color: #babcbc;
+			font-size: 20px;
+			transition-duration: 0.5s;
+		}
+
+		}
+		i:hover{ 
+			overflow: visible; 
+			color: $color1;
+			
+			transform: scale(1.5);
+		}
+		&:before{
+			content: '';
+			display: block;
+			width: 100px;
+			height: 2px;
+			background-color: #babcbc;
+			position: absolute;
+			margin-top: -24px;
+		}
+}
