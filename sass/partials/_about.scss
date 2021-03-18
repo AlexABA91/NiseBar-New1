@@ -1,4 +1,7 @@
 .about {
+	position: relative;
+	display: block;
+	height: 435px;
 .layout {
 width:1100px;
 max-width: 1100px;
@@ -11,7 +14,7 @@ max-width: 1100px;
 
 h1{ @include font($brand-font-2,26px,bold,$color2);
 letter-spacing: normal;}
-margin-bottom:46px;
+margin: 90px 0 46px 0;
 &:after{
 	content: '';
 	position: absolute;
@@ -47,7 +50,6 @@ margin-right: 14px;
 	display: inline;
 	line-height: 30px;
 		}
-}
 p{
 	@include font($brand-font-2,16px,400,$font-color1);
 	text-align: left;	
@@ -89,7 +91,7 @@ margin-bottom:46px;
 	position: relative;
 	width: 85%;
 	height: 80px;	
-	margin-bottom: 60px;
+	margin-bottom: 57px;
 	transition-duration: 0.5s;
 	border-radius: 50px 5px 5px 50px;
 	 &:hover{
@@ -106,6 +108,9 @@ margin-bottom:46px;
 				 			80%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 68%, rgb(242, 242, 242) 75%);}
 				 			100%{background: linear-gradient(315deg, rgb(232, 154, 2) 34%, rgb(169, 132, 45) 73%, rgb(242, 242, 242) 89%);}
 				}		
+		}
+		&:hover h2{
+			color: #fa420b;
 		}
 	}
 .bloksleft{
@@ -128,7 +133,7 @@ margin-bottom:46px;
 	position: relative;
 	width: 100%;
 	height: 80px;	
-	margin-bottom: 60px;
+	margin-bottom: 57px;
 	transition-duration: 0.5s;
 	border-radius: 50px 5px 5px 50px;
 	&:hover{
@@ -147,6 +152,9 @@ margin-bottom:46px;
 				}	
 
 }
+	&:hover h2{
+			color: #fa420b;
+		}
 }
 .blokright{
 	display: block;
@@ -156,4 +164,5 @@ margin-bottom:46px;
 	left: 95px;
 	bottom: 27px;
 	}
+}
 }
