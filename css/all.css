@@ -820,27 +820,27 @@ h1 {
   left: 13px;
 }
 
-.about {
+#about {
   position: relative;
   display: block;
   height: 435px;
 }
-.about .layout {
+#about .layout {
   width: 1100px;
   max-width: 1100px;
 }
-.about .onicebar {
+#about .onicebar {
   position: relative;
   margin: 90px 0 46px 0;
 }
-.about .onicebar h1 {
+#about .onicebar h1 {
   font-family: "OpenSans", sans-serif;
   font-size: 26px;
   font-weight: bold;
   color: #272727;
   letter-spacing: normal;
 }
-.about .onicebar:after {
+#about .onicebar:after {
   content: "";
   position: absolute;
   height: 5px;
@@ -849,7 +849,7 @@ h1 {
   left: 50%;
   left: calc(50% - 50px);
 }
-.about .circle {
+#about .circle {
   display: block;
   height: 80px;
   width: 80px;
@@ -858,7 +858,7 @@ h1 {
   position: relative;
   margin-right: 14px;
 }
-.about .circle i {
+#about .circle i {
   font-size: 40px;
   color: #ffffff;
   display: -webkit-box;
@@ -870,7 +870,7 @@ h1 {
   position: relative;
   top: 20px;
 }
-.about h2 {
+#about h2 {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -881,7 +881,7 @@ h1 {
   display: inline;
   line-height: 30px;
 }
-.about p {
+#about p {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -890,18 +890,18 @@ h1 {
   position: relative;
   line-height: 22px;
 }
-.about .onicebar {
+#about .onicebar {
   position: relative;
   margin-bottom: 46px;
 }
-.about .onicebar h1 {
+#about .onicebar h1 {
   font-family: "OpenSans", sans-serif;
   font-size: 26px;
   font-weight: bold;
   color: #272727;
   letter-spacing: normal;
 }
-.about .onicebar:after {
+#about .onicebar:after {
   content: "";
   position: absolute;
   height: 5px;
@@ -910,13 +910,13 @@ h1 {
   left: 50%;
   left: calc(50% - 50px);
 }
-.about .left {
+#about .left {
   display: block;
   float: left;
   position: relative;
   width: 51%;
 }
-.about .left .blok {
+#about .left .blok {
   display: block;
   position: relative;
   width: 85%;
@@ -927,7 +927,7 @@ h1 {
           transition-duration: 0.5s;
   border-radius: 50px 5px 5px 50px;
 }
-.about .left .blok:hover {
+#about .left .blok:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -992,10 +992,10 @@ h1 {
     background: linear-gradient(315deg, #e89a02 34%, #a9842d 73%, #f2f2f2 89%);
   }
 }
-.about .left .blok:hover h2 {
+#about .left .blok:hover h2 {
   color: #fa420b;
 }
-.about .left .bloksleft {
+#about .left .bloksleft {
   display: block;
   position: absolute;
   width: 80%;
@@ -1003,12 +1003,12 @@ h1 {
   left: 95px;
   bottom: 8px;
 }
-.about .right {
+#about .right {
   float: right;
   display: block;
   width: 47%;
 }
-.about .right .blokr {
+#about .right .blokr {
   display: block;
   position: relative;
   width: 100%;
@@ -1019,7 +1019,7 @@ h1 {
           transition-duration: 0.5s;
   border-radius: 50px 5px 5px 50px;
 }
-.about .right .blokr:hover {
+#about .right .blokr:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1061,16 +1061,28 @@ h1 {
     background: linear-gradient(315deg, #e89a02 34%, #a9842d 73%, #f2f2f2 89%);
   }
 }
-.about .right .blokr:hover h2 {
+#about .right .blokr:hover h2 {
   color: #fa420b;
 }
-.about .right .blokright {
+#about .right .blokright {
   display: block;
   position: absolute;
   width: 445px;
   height: 60px;
   left: 95px;
   bottom: 27px;
+}
+
+#reservation {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.pic {
+  display: block;
+  position: relative;
 }
 
 .pic img {
@@ -1085,7 +1097,7 @@ h1 {
   display: block;
   position: absolute;
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: #000;
   z-index: 2;
   bottom: 0;
@@ -1167,6 +1179,62 @@ h1 {
   background-color: #babcbc;
   position: absolute;
   margin-top: -24px;
+}
+
+#menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.banermenu h1 {
+  display: block;
+  position: relative;
+  font-family: "OpenSans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: nornal;
+}
+.banermenu h1:after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: #f4754e;
+  display: block;
+  position: absolute;
+  left: calc( 50% - 50px);
+}
+
+.pazl {
+  display: block;
+  width: 350px;
+  height: 250px;
+}
+
+.pazl1 {
+  background-image: url("../images/img_menufoto1.png");
+}
+
+.pazl2 {
+  background-image: url("../images/img_menufoto2.png");
+}
+
+.pazl3 {
+  background-image: url("../images/img_menufoto3.png");
+}
+
+.pazl4 {
+  background-image: url("../images/img_menufoto4.png");
+}
+
+.pazl5 {
+  background-image: url("../images/img_menufoto5.png");
+}
+
+.pazl6 {
+  background-image: url("../images/img_menufoto6.png");
 }
 
 footer {

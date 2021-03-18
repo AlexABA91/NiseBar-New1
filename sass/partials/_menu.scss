@@ -1,0 +1,37 @@
+#menu{
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 90px;
+}
+.banermenu h1{
+	display: block;
+	position: relative;
+	@include font($brand-font-2,26px,700,#000);
+	letter-spacing: nornal;
+	&:after{
+		content: '';
+		width: 100px;
+		height: 5px;
+		background-color: $color1;
+		display: block;
+		position: absolute;
+		left:calc( 50% - 50px);
+	}
+}
+.grid {}
+.pazl {display: block;
+	width: 350px;
+height:250px}
+
+
+.bgb {}
+.bgo {}
+.icon1 {}
+.icon2 {}
+.pazl1 {background-image: url('../images/img_menufoto1.png');}
+.pazl2 {background-image: url('../images/img_menufoto2.png');}
+.pazl3 {background-image: url('../images/img_menufoto3.png');}
+.pazl4 {background-image: url('../images/img_menufoto4.png');}
+.pazl5 {background-image: url('../images/img_menufoto5.png');}
+.pazl6 {background-image: url('../images/img_menufoto6.png');}
