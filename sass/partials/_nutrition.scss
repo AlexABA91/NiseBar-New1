@@ -1,8 +1,8 @@
 #nutrition{
 	display: block;
 	position: relative;
-	background: url('../images/img_7.png')100% 30% no-repeat;
-	// height: 905px;
+	background: url('../images/img_7.png')78% 5% no-repeat;
+	
 }
 .layout {
 	width: 1100px;
@@ -42,13 +42,19 @@ position: relative;}
 .listoll {
 	display: block;
 	position: relative;
+	margin-top: 60px;
+	
+			& h2{@include font($brand-font-2,16px,700,#000);
+						text-align: left;
+						margin-bottom: 21px;
+						text-transform: uppercase;
+						letter-spacing: normal;}
+      & p{@include font($brand-font-2,16px,400,#000);
+						text-align: left;}
+		
 }
-.listelement {
-	h2{@include font($brand-font-2,16px,700,#000);
-		margin-bottom: 20px;
-		text-transform: uppercase;}
-	p{@include font($brand-font-2,16px,400,#000);}
-}
+
+
 .cerkl {
 	display: block;
 	position: relative;
@@ -66,3 +72,39 @@ position: relative;}
 		margin-top: 20px; 
 	}
 }
+
+.listelement{
+	display: block;
+	position: relative;
+	margin-bottom: 140px;
+	transition:transform 0.5s ease-in, margin-left 0.5s ease-in;
+		&:hover{
+			transform: scale(1.5);
+			margin-left: -10px;}
+			}
+
+.listelement1 {	
+	width:370px;
+	margin-left: 122px;	
+	}
+	.listelement2{
+		width: 567px;		
+	}
+	.listelement3{
+		margin-left: 122px;
+		width: 300px;
+	}
+.listelement4{
+	margin-left: 242px;
+	width: 450px;
+}
+.description{
+display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 96px;
+	bottom: 0%;}
+
+
+

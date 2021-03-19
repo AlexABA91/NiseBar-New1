@@ -1112,6 +1112,7 @@ h1 {
   letter-spacing: normal;
   display: block;
   margin-top: 115px;
+  text-align: center;
 }
 
 .iconr {
@@ -1290,10 +1291,11 @@ h1 {
   font-size: 26px;
   font-weight: 400;
   color: #ffffff;
-  opacity: 1 !important;
+  opacity: 1;
   text-transform: capitalize;
   letter-spacing: normal;
   margin-top: 90px;
+  text-align: center;
 }
 
 .iconfild {
@@ -1362,7 +1364,7 @@ h1 {
 #nutrition {
   display: block;
   position: relative;
-  background: url("../images/img_7.png") 100% 30% no-repeat;
+  background: url("../images/img_7.png") 78% 5% no-repeat;
 }
 
 .layout {
@@ -1412,21 +1414,24 @@ h1 {
 .listoll {
   display: block;
   position: relative;
+  margin-top: 60px;
 }
-
-.listelement h2 {
+.listoll h2 {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 21px;
   text-transform: uppercase;
+  letter-spacing: normal;
 }
-.listelement p {
+.listoll p {
   font-family: "OpenSans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #000;
+  text-align: left;
 }
 
 .cerkl {
@@ -1448,6 +1453,51 @@ h1 {
   height: 80px;
   text-align: center;
   margin-top: 20px;
+}
+
+.listelement {
+  display: block;
+  position: relative;
+  margin-bottom: 140px;
+  -webkit-transition: margin-left 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  transition: margin-left 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in, margin-left 0.5s ease-in;
+  transition: transform 0.5s ease-in, margin-left 0.5s ease-in;
+  transition: transform 0.5s ease-in, margin-left 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+.listelement:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-left: -10px;
+}
+
+.listelement1 {
+  width: 370px;
+  margin-left: 122px;
+}
+
+.listelement2 {
+  width: 567px;
+}
+
+.listelement3 {
+  margin-left: 122px;
+  width: 300px;
+}
+
+.listelement4 {
+  margin-left: 242px;
+  width: 450px;
+}
+
+.description {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 96px;
+  bottom: 0%;
 }
 
 footer {

@@ -64,10 +64,11 @@
 		top: 12px;
 		h2{
 			@include font($brand-font-2,26px,400,#ffffff);
-			opacity: 1 !important;
+			opacity: 1;
 			text-transform: capitalize;
 			letter-spacing: normal;
-			margin-top: 90px; 
+			margin-top: 90px;
+			text-align: center; 
 		}
 	}
 
