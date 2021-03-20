@@ -1489,6 +1489,7 @@ h1 {
 .listelement4 {
   margin-left: 242px;
   width: 450px;
+  margin-bottom: 92px;
 }
 
 .description {
@@ -1498,6 +1499,83 @@ h1 {
   height: 100%;
   left: 96px;
   bottom: 0%;
+}
+
+#counter {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("../images/img_8.png") 0 0/100% auto no-repeat;
+}
+
+.bgc {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.ollblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+
+.blockcaunter {
+  position: relative;
+  width: 32.28%;
+  height: 300px;
+  background-color: #f4754e;
+}
+
+.tile {
+  margin: 0 auto;
+  margin-top: calc(50% - 90px);
+  display: block;
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+.tile i {
+  font-size: 80px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.tile p {
+  font-family: "OpenSans", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.tile.stars {
+  width: 80%;
+}
+.tile:hover {
+  -webkit-animation: pulsate 0.5s linear infinite;
+          animation: pulsate 0.5s linear infinite;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
+}
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
 }
 
 footer {
