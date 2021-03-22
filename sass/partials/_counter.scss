@@ -24,6 +24,18 @@
 	width: 32.28%;
 	height: 300px;
 	background-color: $color1;
+	 &:hover{
+ 	animation: pulsate 0.5s linear infinite;
+ 	text-shadow: 0 -1px rgba(0,0,0,.1);
+ 	color: rgb(245,245,245);
+ 	@keyframes pulsate {
+ 50% {
+  color: #fff; 
+ 	text-shadow: 0 -1px rgba(0,0,0,.3),
+ 	 0 0 5px #ffd, 
+ 	 0 0 8px #fff; }
+ }
+}
 }
 	.tile{
 		margin: 0 auto;
@@ -44,16 +56,5 @@
 		 &.stars{
  	width: 80%;
 }
- &:hover{
- 	animation: pulsate 0.5s linear infinite;
- 	text-shadow: 0 -1px rgba(0,0,0,.1);
- 	color: rgb(245,245,245);
- 	@keyframes pulsate {
- 50% {
-  color: #fff; 
- 	text-shadow: 0 -1px rgba(0,0,0,.3),
- 	 0 0 5px #ffd, 
- 	 0 0 8px #fff; }
- }
-}
+
 }

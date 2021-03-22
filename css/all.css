@@ -837,7 +837,7 @@ h1 {
   font-family: "OpenSans", sans-serif;
   font-size: 26px;
   font-weight: bold;
-  color: #272727;
+  color: #000000;
   letter-spacing: normal;
 }
 #about .onicebar:after {
@@ -898,7 +898,7 @@ h1 {
   font-family: "OpenSans", sans-serif;
   font-size: 26px;
   font-weight: bold;
-  color: #272727;
+  color: #000000;
   letter-spacing: normal;
 }
 #about .onicebar:after {
@@ -1535,6 +1535,24 @@ h1 {
   height: 300px;
   background-color: #f4754e;
 }
+.blockcaunter:hover {
+  -webkit-animation: pulsate 0.5s linear infinite;
+          animation: pulsate 0.5s linear infinite;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
+}
+@-webkit-keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
+@keyframes pulsate {
+  50% {
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+  }
+}
 
 .tile {
   margin: 0 auto;
@@ -1559,23 +1577,208 @@ h1 {
 .tile.stars {
   width: 80%;
 }
-.tile:hover {
-  -webkit-animation: pulsate 0.5s linear infinite;
-          animation: pulsate 0.5s linear infinite;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
-  color: whitesmoke;
+
+#formfild .layout {
+  width: 740px;
 }
-@-webkit-keyframes pulsate {
-  50% {
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
-  }
+
+.banerform {
+  display: block;
+  position: relative;
+  margin-top: 110px;
 }
-@keyframes pulsate {
-  50% {
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
-  }
+.banerform h1 {
+  display: block;
+  position: relative;
+  font-family: "OpenSans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: nornal;
+  text-transform: uppercase;
+}
+.banerform h1:after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: #f4754e;
+  display: block;
+  position: absolute;
+  left: calc( 50% - 50px);
+}
+.banerform p {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  width: 220px;
+  margin-left: calc(50% - 110px);
+  margin-top: 40px;
+}
+
+.formfildoll {
+  display: block;
+  position: relative;
+  margin-top: 70px;
+}
+
+.iconformfild {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 0;
+}
+
+.iconform {
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  -o-transition: transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+.iconform i {
+  font-size: 24px;
+  color: #f4754e;
+  margin-bottom: 18px;
+}
+.iconform a {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+.iconform:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mailf {
+  margin: 0 10px 0 -10px;
+}
+
+.telefonf {
+  margin: 0 50px 0 0;
+}
+
+.twiterf {
+  margin-right: 20px;
+}
+
+.formself {
+  display: block;
+  position: relative;
+  margin-top: 36px;
+}
+
+.formleft {
+  float: left;
+  width: 350px;
+  height: 120px;
+}
+
+.fildtext input {
+  width: 342px;
+  height: 24px;
+  margin-bottom: 15px;
+}
+.fildtext input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.fildtext input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.fildtext input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.fildtext input::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.fildtext input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.formrigt {
+  float: right;
+}
+.formrigt textarea {
+  width: 344px;
+  height: 114px;
+  resize: none;
+}
+.formrigt textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.formrigt textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.formrigt textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.formrigt textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.formrigt textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.battontill {
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 56px);
+}
+.battontill button {
+  display: inline;
+  background-color: #f4754e;
+  border: 0 solid #fff;
+  width: 113px;
+  height: 35px;
+  color: #ffffff;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.battontill button i {
+  font-size: 16px;
+  padding: 0 9px 0 0;
 }
 
 footer {

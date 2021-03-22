@@ -1,0 +1,126 @@
+
+#formfild .layout{
+	width: 740px;
+}
+.banerform {
+	display: block;
+	position: relative;
+	margin-top: 110px;
+	h1{
+		display: block;
+	position: relative;
+	@include font($brand-font-2,26px,700,#000);
+	letter-spacing: nornal;
+	text-transform: uppercase;
+	&:after{
+		content: '';
+		width: 100px;
+		height: 5px;
+		background-color: $color1;
+		display: block;
+		position: absolute;
+		left:calc( 50% - 50px);
+		}
+			}
+			p{
+			@include font($brand-font-2,16px,300,#000);
+			text-align: center;
+			width: 220px;
+			margin-left: calc(50% - 110px);
+			margin-top: 40px;
+			
+		}
+}
+
+.formfildoll {
+	display: block;
+	position: relative;
+	margin-top: 70px; 
+}
+.iconformfild {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 0;
+}
+.iconform {
+	display: inline-block;
+	text-align: center;
+
+	
+	& i{
+		font-size: 24px;
+		color: $color1;
+		margin-bottom: 18px;
+	}
+	& a{@include font($brand-font-2,14px,300,$font-color1);}
+		transition: transform 1s ease; 
+	&:hover{
+		transform: scale(1.5);
+	}
+}
+.mailf {margin: 0 10px 0 -10px;}
+
+
+.telefonf {
+	margin: 0 50px 0 0;
+}
+
+.twiterf {
+	margin-right: 20px;
+}
+
+
+.formself {
+	display: block;
+	position: relative;
+	margin-top: 36px; 
+}
+.formleft {
+	float: left;
+	width: 350px;
+	height: 120px;
+}
+.fildtext{
+	& input{
+	width: 342px;
+	height: 24px;
+margin-bottom: 15px;}
+& input::placeholder{
+	
+	@include font($brand-font-1,14px,700,$color2);}
+}
+
+
+
+.firstname {}
+.secondname {}
+.emaile {}
+.formrigt {
+	float: right;
+	& textarea{
+	width: 344px;
+	height: 114px;
+resize: none;}
+textarea::placeholder{
+	@include font($brand-font-1,14px,700,$color2);
+}
+}
+.battontill{
+	display: block;
+	position: absolute;
+	top: 140px;
+	left: calc(50% - 56px);
+	 & button{
+	 	display: inline;
+	 	background-color: $color1;
+	 	border: 0 solid #fff;
+	 	width: 113px;
+	 	height: 35px;
+	 	color: #ffffff;
+	 	@include font($brand-font-2,14px,400,#ffffff);
+	 	& i {font-size: 16px;
+	 		padding: 0 9px 0 0 ; 
+	 	}
+	 }
+}
