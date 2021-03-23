@@ -35,7 +35,8 @@
 .formfildoll {
 	display: block;
 	position: relative;
-	margin-top: 70px; 
+	margin-top: 70px;
+	margin-bottom: 290px; 
 }
 .iconformfild {
 	width: 100%;
@@ -93,9 +94,7 @@ margin-bottom: 15px;}
 
 
 
-.firstname {}
-.secondname {}
-.emaile {}
+
 .formrigt {
 	float: right;
 	& textarea{
@@ -118,9 +117,10 @@ textarea::placeholder{
 	 	width: 113px;
 	 	height: 35px;
 	 	color: #ffffff;
+	 	letter-spacing: 1px;
 	 	@include font($brand-font-2,14px,400,#ffffff);
 	 	& i {font-size: 16px;
-	 		padding: 0 9px 0 0 ; 
+	 		padding: 0 5px 0 0 ; 
 	 	}
 	 }
 }

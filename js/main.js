@@ -7,5 +7,7 @@ $(function() {
 		infinite:true,
 		slidesToShow: 1,
 	});
-	
+	$('.arrowap').click(function(){
+		$('html, body').animate({scrollTop:0}, '500');
+    });	
 });
