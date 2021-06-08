@@ -10,7 +10,7 @@
 		display: block;
 	position: relative;
 	@include font($brand-font-2,26px,700,#000);
-	letter-spacing: nornal;
+	letter-spacing: normal;
 	text-transform: uppercase;
 	&:after{
 		content: '';
@@ -117,8 +117,10 @@ textarea::placeholder{
 	 	width: 113px;
 	 	height: 35px;
 	 	color: #ffffff;
-	 	letter-spacing: 1px;
+	 	// letter-spacing: 1px;
+	 	// -moz-letter-spacing: 0px;
 	 	@include font($brand-font-2,14px,400,#ffffff);
+	 	
 	 	& i {font-size: 16px;
 	 		padding: 0 5px 0 0 ; 
 	 	}

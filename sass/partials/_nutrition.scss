@@ -15,7 +15,7 @@
 		display: block;
 	position: relative;
 	@include font($brand-font-2,26px,700,#000);
-	letter-spacing: nornal;
+	letter-spacing: normal;
 	text-transform: uppercase;
 	&:after{
 		content: '';

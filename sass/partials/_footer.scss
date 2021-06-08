@@ -1,46 +1,44 @@
 footer {
-	display:block;
+	display: block;
 	position: relative;
-	width:100%;
+	width: 100%;
 	height: 131px;
-	margin:180px 0 0 0;
-	padding:0 0 0;
+	margin: 180px 0 0 0;
+	padding: 0 0 0;
 	background-color: #1b1b1b;
-			& .arrowap{
-			display: block;
-			width: 60px;
-			height: 60px;
-			border: 1px solid #ffffff;
-			border-right: 1px;
-			background-color: $color1;
-			z-index: 2;
-			position: absolute;
-			left: calc(50% - 30px);
-			top: -30px;
-			z-index: 5;
-			 & i{
-			 	font-size: 50px;
-			 	color: #ffffff;
-			 	margin: 5px 0 0 8px;
-			 }
+	& .arrowap {
+		display: block;
+		width: 60px;
+		height: 60px;
+		border: 1px solid #ffffff;
+		border-right: 1px;
+		background-color: $color1;
+		z-index: 2;
+		position: absolute;
+		left: calc(50% - 30px);
+		top: -30px;
+		z-index: 5;
+		& i {
+			font-size: 50px;
+			color: #ffffff;
+			margin: 5px 0 0 8px;
 		}
-		& .rigtrecived{
-			display: inline-block;
-			margin-top: 88px;
-			margin-left: calc(50% - 190px); 
-			@include font('MyriadPro',18px,400,#ffffff);
-			text-transform: uppercase;
+	}
+	& .rigtrecived {
+		display: inline-block;
+		margin-top: 88px;
+		margin-left: calc(50% - 190px);
+		@include font("MyriadPro", 18px, 400, #ffffff);
+		text-transform: uppercase;
 
-			&:before{
-				content: '\00A9';
-				margin-right: 5px; 
-			}
+		&:before {
+			content: "\00A9";
+			margin-right: 5px;
 		}
-		& .signature{
-			@include font($brand-font-1,18px,300,#333333);
-			display: inline-block;
-			margin-left: 500px;}
-			
-			
-
+	}
+	& .signature {
+		@include font($brand-font-1, 18px, 300, #333333);
+		display: inline-block;
+		margin-left: 500px;
+	}
 }

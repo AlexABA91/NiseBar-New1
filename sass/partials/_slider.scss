@@ -33,7 +33,7 @@
 	}
 .slick-track{
 	display: flex;
-	align-items: flex-star;
+	align-items: flex-start;
 	position: relative;
 	
 }
@@ -79,13 +79,13 @@
 			position: absolute;
 			bottom: 50px;
 			z-index: 10;
-			left: 48.2%;
+			left: calc(50% - 44px);
 			
 		&.slick-dots li{
 				margin: 0 7px 0 0;}				
 		&.slick-dots button{
 			font-size: 0;
-			widows: 12px;
+			width: 12px;
 			height: 12px;
 			background-color: #704e43;		
 			border: none;}			
@@ -151,6 +151,8 @@ h2{
 	bottom: -100%;
 	background-color: $color1;
 	border-radius: 3px;
+	margin-left: 0;
+	
 	a{
 		@include font($brand-font-1,20px,400,$font-color2);
 		text-transform: uppercase;
